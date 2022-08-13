@@ -1,11 +1,11 @@
-# Headset Interconnect Standard License
-The Headset Interconnect Standard, aka "HIS" or the "Standard.", is licensed CC-BY-NC 4.0.  Official text of the license is at https://creativecommons.org/licenses/by-nc/4.0/legalcode and copied below.
+# Open Headset Interconnect Standard License
+The Open Headset Interconnect Standard, aka "OHIS" or the "Standard.", is licensed CC-BY-NC 4.0.  Official text of the license is at https://creativecommons.org/licenses/by-nc/4.0/legalcode and copied below.
 
-NOTE that this license applies to the HIS document and Standard, not to devices that use the standard.  The goal of this license is to create a single authoritative source for the HIS, prevent fracturing of the Standard.  Any company or individual is free to:
+NOTE that this license applies to the OHIS document and Standard, not to devices that use the standard.  The goal of this license is to create a single authoritative source for the OHIS, prevent fracturing of the Standard.  Any company or individual is free to:
 
-* Distribute HIS in unmodified forms, but is not allowed to charge money for its distribution, nor claim it as their own.  HIS maintainers get credit for their work, and get final say on what's in the Standard.  (Those we are open to submissions.)
-* Use HIS in making their own non-compliant standards or products, but are NOT allowed to call it the Headset Interconnect Standard, or HIS compliant.  HIS maintainers have no intention of becoming "trolls" for similar-but-derivitive products.  Just don't call it HIS or HIS compliant.  
-* Use HIS to produce their own HIS compliant products, commercial or not.  This is an open standard.
+* Distribute OHIS in unmodified forms, but is not allowed to charge money for its distribution, nor claim it as their own.  OHIS maintainers get credit for their work, and get final say on what's in the Standard.  (Those we are open to submissions.)
+* Use OHIS in making their own non-compliant standards or products, but are NOT allowed to call it the Open Headset Interconnect Standard, or OHIS compliant.  OHIS maintainers have no intention of becoming "trolls" for similar-but-derivitive products.  Just don't call it OHIS or OHIS compliant.  
+* Use OHIS to produce their own OHIS compliant products, commercial or not.  This is an open standard.
 
 Full text of the Creative Commons BY-NC 4.0 license follows:
 
