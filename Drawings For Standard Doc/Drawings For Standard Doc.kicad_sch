@@ -1,0 +1,116 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 8fdd3f24-f5f8-421f-ad44-c183948b8431)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 133.35 173.355) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 37aa262a-aeff-44bf-a2ca-eead12de1830)
+    (property "Sheet name" "Electret Mic" (id 0) (at 133.35 172.6434 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Electret Mic.kicad_sch" (id 1) (at 133.35 177.7496 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 82.55 147.32) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 71cdc780-190f-4121-90aa-59d0facb45e7)
+    (property "Sheet name" "Participants" (id 0) (at 82.55 146.6084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Participants.kicad_sch" (id 1) (at 82.55 151.7146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 78.105 172.72) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid ed9bd400-3b97-454b-8968-30ff244c6838)
+    (property "Sheet name" "Dynamic Mic" (id 0) (at 78.105 172.0084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Dynamic Mic.kicad_sch" (id 1) (at 78.105 177.1146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838" (page "2"))
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830" (page "3"))
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7" (page "4"))
+  )
+
+  (symbol_instances
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/293e1602-9b03-42d6-9153-8377027028aa"
+      (reference "J?") (unit 1) (value "Headphones") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/2aead5e5-34aa-496e-816f-01d7ec2a1822"
+      (reference "J?") (unit 1) (value "OHIS User Interface") (footprint "")
+    )
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830/3d5a1144-bcb7-498d-bce1-bba3626b341e"
+      (reference "J?") (unit 1) (value "OHIS User Interface") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/9c58f59e-f10e-4393-923e-9bd12cca7a38"
+      (reference "J?") (unit 1) (value "PTT") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/9e7a0400-f82a-4ea1-b430-14235d1ee093"
+      (reference "J?") (unit 1) (value "Microphone") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/c34491c4-ed31-4cce-9314-6fb530eb4776"
+      (reference "J?") (unit 1) (value "OHIS, Radio Side") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/d7da457a-dee9-4cf1-b100-ccc378064e32"
+      (reference "J?") (unit 1) (value "OHIS, User Side") (footprint "")
+    )
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830/343e496a-a5a4-48a5-b692-5b81e39227ba"
+      (reference "LS?") (unit 1) (value "Left") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/8c3ee3bb-deda-4a0c-a04f-7c49a07ac2fa"
+      (reference "LS?") (unit 1) (value "Left") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/9aed184c-1971-4f95-94e4-42d1cc8a6e31"
+      (reference "LS?") (unit 1) (value "Left") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/a64259a2-7584-49e9-84ea-1dac7aa1aba6"
+      (reference "LS?") (unit 1) (value "Right") (footprint "")
+    )
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830/bc7ce062-419b-40e0-949d-239c3da6f895"
+      (reference "LS?") (unit 1) (value "Right") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/f5cb6a68-9168-4399-ad85-634a136655e1"
+      (reference "LS?") (unit 1) (value "Right") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/157dc2d1-25b1-45e9-9969-c02681f13a77"
+      (reference "MK?") (unit 1) (value "Dynamic") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/6b44132b-20ca-4c9f-8969-dc511edbbe10"
+      (reference "MK?") (unit 1) (value "Microphone") (footprint "")
+    )
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830/d2076957-2817-4b19-b10b-5f6536800f05"
+      (reference "MK?") (unit 1) (value "Electret") (footprint "")
+    )
+    (path "/37aa262a-aeff-44bf-a2ca-eead12de1830/078b4861-02f9-41dc-a2e8-a190a6ad9f92"
+      (reference "SW?") (unit 1) (value "PTT") (footprint "")
+    )
+    (path "/71cdc780-190f-4121-90aa-59d0facb45e7/3ac8a45b-c87c-413a-b9dd-883c9e70b222"
+      (reference "SW?") (unit 1) (value "PTT") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/700b0ef4-0c1f-4211-8f6f-3575ee979340"
+      (reference "SW?") (unit 1) (value "PTT") (footprint "")
+    )
+    (path "/ed9bd400-3b97-454b-8968-30ff244c6838/9145df75-20ef-43f2-ad45-754dee641913"
+      (reference "U?") (unit 2) (value "Pre Amp") (footprint "")
+    )
+  )
+)

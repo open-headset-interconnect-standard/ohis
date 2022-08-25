@@ -1,4 +1,5 @@
 # Open Headset Interconnect Standard License
+
 The Open Headset Interconnect Standard, aka "OHIS" or the "Standard.", is licensed CC-BY-NC 4.0.  Official text of the license is at https://creativecommons.org/licenses/by-nc/4.0/legalcode and copied below.
 
 NOTE that this license applies to the OHIS document and Standard, not to devices that use the standard.  The goal of this license is to create a single authoritative source for the OHIS, prevent fracturing of the Standard.  Any company or individual is free to:

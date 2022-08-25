@@ -1,0 +1,6 @@
+{
+    "markdown-pdf.convertOnSave": true,
+    "markdown-pdf.type": ["pdf"],
+    "markdown-pdf.outputDirectory": "docs",
+    "markdown-pdf.format": "Letter"
+}
