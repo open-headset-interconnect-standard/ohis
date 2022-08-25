@@ -64,7 +64,6 @@ But in some cases, this isn't possible.  eg: A 4-pin TRRS Headset connector whic
 
 ## 3.1. Physical
 
-
 The connector is an 8P8C Modular connector, commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) referred to as an RJ-45.  Given that nearly the entire telephony and networking industry has adopted the (technically-incorrect) use of "RJ-45", we will also refer to it as "RJ-45" in this document despite the technically-incorrectness of the term.
 
 The cables used must be wired as TIA-568B.  Specifically, OHIS assumes wires are paired as described in TIA-568B: 1&2, 3&6, 4&5, 7&8.  (TIA-568A also works for straight-through cables (pairs are on the same pins), but when pair colors are discussed in this document we will use TIA-568B colors.)
