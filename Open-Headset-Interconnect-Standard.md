@@ -35,7 +35,11 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
 - [5. Standard Details](#5-standard-details)
     - [5.1. Architecture](#51-architecture)
         - [5.1.1. User vs Radio](#511-user-vs-radio)
-    - [5.2. Physical: Cables and Connectors](#52-physical-cables-and-connectors)
+    - [5.2. Physical](#52-physical)
+        - [5.2.1. Connector](#521-connector)
+        - [5.2.2. Cables](#522-cables)
+        - [5.2.3. Shielded Cables](#523-shielded-cables)
+        - [5.2.4. Sockets or Pigtails?](#524-sockets-or-pigtails)
     - [5.3. Electrical](#53-electrical)
         - [5.3.1. Microphone](#531-microphone)
             - [5.3.1.1. Dynamic Microphones](#5311-dynamic-microphones)
@@ -68,7 +72,7 @@ There are two participants:
 * User: Describes the "headset" side of the interconnect.  Consumes the Headphone signal, generates the Microphone signal, and will trigger Push To Talk (PTT).  Optionally uses the Vcc provided by the Radio side.
 * Radio: Describes the device the "headset" connects to.  Generates the Headphone signal, consumes the Microphone and PTT signals, and provides power to Vcc.
 
-OHIS us an 8P8C/RJ-45 connector, using TIA-568B wiring, shielded cable preferred but not required.
+OHIS us an 8P8C Modular connector (commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) known as "RJ-45"), using TIA-568B wiring, shielded cable preferred but not required.
 
 | Pin | Direction | Description |
 |---|---|---|
@@ -120,7 +124,7 @@ Such a standard doesn't exist between the User and the Radio, for either electri
 
 Physical options include:
 
-* Microphone: 3.5mm TS, XLR, one of several different modular plugs (eg: RJ45, RJ6), or 4-pin/8-pin "round aviation" plugs?  Which of the multiple pin-out options for the modular and 8-pin round connectors?  What other signals are available on the mic connector?
+* Microphone: 3.5mm TS, XLR, one of several different modular plugs (eg: 8P8C/RJ45, 6P6C/RJ6), or 4-pin/8-pin "round aviation" plugs?  Which of the multiple pin-out options for the modular and 8-pin round connectors?  What other signals are available on the mic connector?
 * Headphone: 3.5mm or 1/4"?  TS or TRS?
 * PTT: Is it on its own connector, or part of the microphone connector?  If its own, is it 3.5mm, 1/4", RCA?  If 3.5mm or 1/4", is it TS, or TRS and shared with a morse key?
 
@@ -181,15 +185,31 @@ To further clarify the use of "User" and "Radio:"
 * User Device: Commonly referred to as "the headset" in this document, but isn't necessarily an actual headset.  Any device that consumes the Headphone signal from the Radio, and generates a Microhphone signal sent to the Radio, and is capable of triggering the PTT, is considered a User device.  It could be a separate headphone, mic on a boom arm, and a foot switch.  Or it could be a "speaker-mic" as commonly found on HTs.
 * Radio Device: Again, this is not necessarily a Radio.  Any device that consumes a Microphone signal and generates a Headphone signal, and (optionally) does something useful with the PTT signal, is considered a Radio device.  It could be a computer audio interface, or a BlueTooth connection to a phone.
 
-## 5.2. Physical: Cables and Connectors
+## 5.2. Physical
 
-The connector is an 8P8C Modular connector, commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) referred to as an RJ-45.  Given that nearly the entire telephony and networking industry has adopted the (technically-incorrect) use of "RJ-45", we will also refer to it as "RJ-45" in this document despite the technically-incorrectness of the term.
+### 5.2.1. Connector
+
+The connector is an 8P8C Modular connector, commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) referred to as an RJ-45.
+
+### 5.2.2. Cables
 
 The cables used must be wired as TIA-568B.  Specifically, OHIS assumes wires are paired as described in TIA-568B: 1&2, 3&6, 4&5, 7&8.  (TIA-568A also works for straight-through cables (pairs are on the same pins), but when pair colors are discussed in this document we will use TIA-568B colors.)
 
 The above allows the use of common off-the-shelf "Ethernet" cables for use when connecting OHIS devices.  Any category from Cat5 or above will work; OHIS has no high-speed requirements on the cable.
 
+### 5.2.3. Shielded Cables
+
 Shielded cables are preferred, but not required.  Either whole-cable shields, like used in Cat5 STP, or per-pair shields, like used in Cat6A and above, will work.  When per-pair shields are used, all shields are terminated together.
+
+Shields Must be connected to Power Ground on the Radio side, and Must Not be connected at the User side (to prevent Ground loops.  **TODO** Is this really the right thing to do?)
+
+### 5.2.4. Sockets or Pigtails?
+
+Both OHIS User and Radio May use 8P8C Sockets, which would use a "standard Ethernet cable" to connect the two.
+
+An OHIS User device May incorporate the cable directly into the device, creating a "pig tail" that connects directly to OHIS Radio device.
+
+OHIS Radio devices Must be a socket, and May Not have integrated cables.
 
 ## 5.3. Electrical
 
@@ -202,7 +222,9 @@ The Microphone signal in OHIS is a conventional Electret Microphone element, as 
 * The Radio side provides 3.3vDC to 12vDC Bias voltage through 2.2k ohm impedance.
     * This DC bias voltage should be as free from noise as possible.  Any noise on this supply will conduct directly to the microphone input on the radio.
 
-Microphone Ground should be kept as separate as possible (not tied to Power or Headphone Grounds unless absolutely necessary), allowing Microphone signal return currents, and ONLY the Microphone signal return currents, to be seen by the Microphone receiver on the Radio side.  Idealy, the Microphone receiver circuit treats the Microphone pair as a balanced signal to reject common mode current noise picked up by the Microphone cables.
+The Microphone Signals are carried on Pins 6 (Microphone) and 3 (Microphone Ground), which are the Green pair in TIA-568B wiring.
+
+Microphone Ground should be kept as separate as possible (not tied to Power or Headphone Grounds unless absolutely necessary), allowing Microphone signal return currents, and ONLY the Microphone signal return currents, to be seen by the Microphone receiver on the Radio side.  Ideally, the Microphone receiver circuit treats the Microphone pair as a balanced signal to reject common mode current noise picked up by the Microphone cables.
 
 This may not always be possible (eg: a 4 pin TRRS headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie the two grounds together.  But this should only be done if absolutely necessary.
 
@@ -231,6 +253,8 @@ The Headphone signal in OHIS is a conventional headphone style signal, as used p
 * Ground referenced single ended audio.  No DC offset, and no push-pull.
 * Stereo signals must share a common return path Ground.
 
+The Headphone Signals are carried on Pins 4 (Left), 8 (Right), and 5 (Headphone Ground).  Left and Headphone Ground are on the Blue pair, and Right is paired with Power Ground on the Brown pair (TIA-568B wiring.)
+
 Similar to the Microphone Ground, the Headphone Ground should be kept as separate as possible, preventing the Headphone return currents from impacting the Microphone signal.
 
 This may not always be possible (eg: a 4 pin TRRS headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie the two grounds together.  But this should only be done if absolutely necessary.
@@ -245,6 +269,8 @@ Generating a Speaker level signal on the User side is beyond the scope of this d
 
 ### 5.3.3. Power
 
+Vcc Power is on Pin 1, paired with PTT on the Orange pair, and Power Ground is on Pin 7, paired with Headphone Right audio on the Brown pair (TIA-568B wiring.)
+
 The Radio side provides Vcc = 5vDC power, and supply at least 200mA.  This line must survive accidental shorts to ground, either with a resettable fuse or other current limiter.  This line should be free from AC ripple (**TODO** Quantify this. 10mV or less?)
 
 Over-voltage by 10% (5.5vDC) is acceptable.  If the power source feeding the Radio side of the OHIS adapter provides more than 5vDC, it must be regulated down to 5vDC.
@@ -255,6 +281,8 @@ OHIS User devices Must work with 5vDC and consume no more than 200mA.  OHIS User
 
 ### 5.3.4. PTT
 
+PTT is on Pin 2, paired with Vcc on the Orange pair of TIA-568B wiring.
+
 The User side triggers Push To Talk (PTT) by shorting the PTT signal to Power Ground.  This can be a simple contact closure of a button or relay, or an active transistor driven pull-down to ground.  The PTT line is a GPIO signal, no audio passes through the PTT signal.  So extending PTT controls through long wires is acceptable.  However, care should be taken to not pick up and conduct noise to the rest of the circuit.
 
 <div class="page" />
@@ -263,13 +291,13 @@ The User side triggers Push To Talk (PTT) by shorting the PTT signal to Power Gr
 
 The Open Headset Interconnect Standard is sponsored and hosted by Halibut Electronics, Inc.
 
-The official source for the Open Headset Interconnect Standard is: https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard
+The official source for the Open Headset Interconnect Standard is: [https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard](https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard)
 
 Provide feedback and suggestions through [GitHub Issues](https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard/issues) on the Standard repository.
 
 ## 6.1. Contributors
 
-* Mark Smith, N6MTS, SmittyHalibut on [GitHub](github.com/SmittyHalibut/) and [Twitter](twitter.com/Smittyhalibut), mark-ohis@electronics.halibut.com
+* Mark Smith, N6MTS, SmittyHalibut on [GitHub](https://github.com/SmittyHalibut/) and [Twitter](https://twitter.com/Smittyhalibut), mark-ohis@electronics.halibut.com
 * Tom T. Tengdin, WB9VXY, wb9vxy@arrl.net
 
 # 7. Appendix
@@ -291,6 +319,10 @@ This simple design is included in the Standard for all to use with no obligation
 * Q1: S9013, or similar NPN BJT transistor.
     * Tests were performed (by Mark Smith in 2022-08) using an S9013 transistor, but nearly any small signal NPN BJT should work. For example, a 2N3904 (through hole) or MMBT3904 (surface mount) should work equally well.
 
-An example recording of audio through this microphone preamp design is [here](KiCAD/MicPreampTest/Recordings/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3)
+An example recording of audio through this microphone preamp design is [here (full path)](KiCAD/MicPreampTest/Recordings/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3) or [here (relative path)](2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3).
+
+This circuit is only a slight modification of a conventional common emitter transistor amplifier, similar to what's analyzed [here](http://www.guitarscience.net/calcs/ce.htm).  The difference being that we are using the 2.2k ohm resistor in the Radio side (upper right corner above) as the collector resistor.  This means the top-side base resistor (R1 above) connects to the output, not to Vcc.  
+
+**TODO** Analyze this in Spice and quantify the actual impact of this.  Testing suggests it works fine.
 
 **TODO** Provide actual measurements.
