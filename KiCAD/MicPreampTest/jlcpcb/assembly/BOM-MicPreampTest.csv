@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC
+1uF,C1,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,C15849
+27k,R2,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C22967
+470,R3,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C23179
+75k,R1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,C23242
+S9013,Q1,SOT-23,C6749
