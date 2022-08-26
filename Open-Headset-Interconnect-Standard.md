@@ -13,8 +13,13 @@ With the Open Headset Interconnect Standard, or OHIS, one can now build/purchase
 
 This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.com/db/WB9VXY), with his [Proposed ARES Standard Headset](http://www.sloecc.org/headsets/proposal_ares_standard_headset.pdf).  This standard is different than his proposal in a few places to make it more generalized, and provides more detail and clarity around several points.
 
+<div class="page" />
+
+## 1.2. Table Of Contents
+
 - [1. Open Headset Interconnect Standard](#1-open-headset-interconnect-standard)
     - [1.1. Introduction](#11-introduction)
+    - [1.2. Table Of Contents](#12-table-of-contents)
 - [2. Document History](#2-document-history)
 - [3. TL,DR: Summary Technical Definition of the Standard](#3-tldr-summary-technical-definition-of-the-standard)
 - [4. Why? What problems does this standard address?](#4-why-what-problems-does-this-standard-address)
