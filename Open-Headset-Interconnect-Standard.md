@@ -300,6 +300,8 @@ Provide feedback and suggestions through [GitHub Issues](https://github.com/Hali
 * Mark Smith, N6MTS, SmittyHalibut on [GitHub](https://github.com/SmittyHalibut/) and [Twitter](https://twitter.com/Smittyhalibut), mark-ohis@electronics.halibut.com
 * Tom T. Tengdin, WB9VXY, wb9vxy@arrl.net
 
+<div class="page" />
+
 # 7. Appendix
 
 ## 7.1. Dynamic Microphone Preamp
