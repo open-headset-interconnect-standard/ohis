@@ -311,7 +311,7 @@ This simple design is included in the Standard for all to use with no obligation
 ![Mic Preamp Circuit](Images/Mic%20Preamp-2196x1037.png)
 
 * C1: 1uF ceramic or other non-polarized capacitor. At least 6.3v rating.
-    * The low-end frequency response of the microphone can be adjusted by changing the value of C1.  Frequency = 1/(2 * Pi * R * C).  R is roughly 27k and 75k in parallel, or about 20k ohm.  C is the value chosen for C1.
+    * The low-end frequency response of the microphone can be adjusted by changing the value of C1.  Frequency = 1/(2\*Pi\*R\*C).  R is roughly 27k and 75k in parallel, or about 20k ohm.  C is the value chosen for C1.
     * 1uF into the ~20k ohm impedance of the amplifier rolls off at about 8Hz.  Using a .1uF would roll off at 80Hz instead, eliminating some rumble and wind/handling noise.
 * R1: 75k ohm resistor, at least 1/16W.
 * R2: 27k ohm resistor, at least 1/16W.
@@ -319,7 +319,7 @@ This simple design is included in the Standard for all to use with no obligation
 * Q1: S9013, or similar NPN BJT transistor.
     * Tests were performed (by Mark Smith in 2022-08) using an S9013 transistor, but nearly any small signal NPN BJT should work. For example, a 2N3904 (through hole) or MMBT3904 (surface mount) should work equally well.
 
-An example recording of audio through this microphone preamp design is [here (full path)](KiCAD/MicPreampTest/Recordings/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3) or [here (relative path)](2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3).
+An example recording of audio through this microphone preamp design is [here](https://halibut-electronics.github.io/Open-Headset-Interconnect-Standard/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3).
 
 This circuit is only a slight modification of a conventional common emitter transistor amplifier, similar to what's analyzed [here](http://www.guitarscience.net/calcs/ce.htm).  The difference being that we are using the 2.2k ohm resistor in the Radio side (upper right corner above) as the collector resistor.  This means the top-side base resistor (R1 above) connects to the output, not to Vcc.  
 
