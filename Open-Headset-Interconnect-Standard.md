@@ -297,8 +297,11 @@ Provide feedback and suggestions through [GitHub Issues](https://github.com/Hali
 
 ## 6.1. Contributors
 
-* Mark Smith, N6MTS, SmittyHalibut on [GitHub](https://github.com/SmittyHalibut/) and [Twitter](https://twitter.com/Smittyhalibut), [mark-ohis@electronics.halibut.com](mailto:mark-ohis@electronics.halibut.com)
-* Tom T. Tengdin, WB9VXY, [wb9vxy@arrl.net](mailto:wb9vxy@arrl.net)
+* Mark Smith, N6MTS  
+  SmittyHalibut on [GitHub](https://github.com/SmittyHalibut/) and [Twitter](https://twitter.com/Smittyhalibut)  
+  Email: [mark-ohis@electronics.halibut.com](mailto:mark-ohis@electronics.halibut.com)
+* Tom T. Tengdin, WB9VXY  
+  Email: [wb9vxy@arrl.net](mailto:wb9vxy@arrl.net)
 
 <div class="page" />
 
