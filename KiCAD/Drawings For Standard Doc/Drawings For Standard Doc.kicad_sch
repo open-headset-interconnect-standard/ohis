@@ -20,6 +20,18 @@
     )
   )
 
+  (sheet (at 90.17 118.11) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 590b8635-2deb-410e-a711-8e6a6ccf9070)
+    (property "Sheet name" "15dB Pad" (id 0) (at 90.17 117.3984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "15dB Pad.kicad_sch" (id 1) (at 90.17 122.5046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet (at 82.55 147.32) (size 12.7 3.81) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -62,9 +74,13 @@
     (path "/37aa262a-aeff-44bf-a2ca-eead12de1830" (page "3"))
     (path "/71cdc780-190f-4121-90aa-59d0facb45e7" (page "4"))
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068" (page "5"))
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070" (page "6"))
   )
 
   (symbol_instances
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070/99f00e9f-dd0f-45db-b64c-f25c3dc4fd9e"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068/b38be19c-4a55-4485-a72a-966d70e9e8b9"
       (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
@@ -79,6 +95,9 @@
     )
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068/763466a8-7a39-4d18-8dc4-edf1e9800158"
       (reference "C?") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+    )
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070/996a8da4-b4ce-4604-ae41-6002928d0504"
+      (reference "C?") (unit 1) (value "1uF") (footprint "")
     )
     (path "/71cdc780-190f-4121-90aa-59d0facb45e7/293e1602-9b03-42d6-9153-8377027028aa"
       (reference "J?") (unit 1) (value "Headphones") (footprint "")
@@ -146,8 +165,17 @@
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068/0385a075-452b-4a8f-b9e7-d37180115693"
       (reference "R3") (unit 1) (value "470") (footprint "")
     )
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070/0013e5d4-135e-4c61-a5df-1fd2721df2c6"
+      (reference "R?") (unit 1) (value "2.2k") (footprint "")
+    )
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070/0857fd1d-0abe-4bf2-a523-7d6e6c34fafe"
+      (reference "R?") (unit 1) (value "100") (footprint "")
+    )
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068/1f9535e3-49ca-43d0-8b41-e73852bb1280"
       (reference "R?") (unit 1) (value "75k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/590b8635-2deb-410e-a711-8e6a6ccf9070/466e6237-2a48-4347-bfb6-e604f797e4c0"
+      (reference "R?") (unit 1) (value "1.5k") (footprint "")
     )
     (path "/ca44b5d4-9a6d-4dee-93ca-025d4c948068/91b59feb-7114-4152-b2aa-12628cebf4c8"
       (reference "R?") (unit 1) (value "2.2k") (footprint "")
