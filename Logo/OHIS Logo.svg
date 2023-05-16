@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="4.4318897"
-     inkscape:cx="317.58462"
-     inkscape:cy="1031.9526"
+     inkscape:zoom="2.2159449"
+     inkscape:cx="411.56258"
+     inkscape:cy="992.57883"
      inkscape:window-width="2502"
      inkscape:window-height="1376"
      inkscape:window-x="1978"
@@ -84,6 +84,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="fill:#fefefe;fill-opacity:1;stroke:none;stroke-width:0.282428;stroke-linecap:round;stroke-linejoin:round"
+       id="rect941"
+       width="107.95"
+       height="25.4"
+       x="85.724998"
+       y="260.35001"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.17222px;line-height:1.25;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -120,14 +130,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3334px;line-height:1.25;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.232143"
-       x="113.62666"
-       y="269.75534"
-       id="text45559-1-7"><tspan
+       x="123.78667"
+       y="279.28033"
+       id="text45559-1-7"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001"><tspan
          sodipodi:role="line"
          id="tspan45557-4-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3334px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.232143"
-         x="113.62666"
-         y="269.75534">OHIS</tspan></text>
+         x="123.78667"
+         y="279.28033">OHIS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.8048px;line-height:1.25;font-family:Uroob;-inkscape-font-specification:'Uroob, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.265242"
@@ -327,37 +340,37 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.8048px;line-height:1.25;font-family:Uroob;-inkscape-font-specification:'Uroob, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.265242"
-       x="56.894798"
+       x="21.807442"
        y="266.81967"
        id="text49806-8-1"
        transform="scale(0.97727513,1.0232533)"><tspan
          sodipodi:role="line"
          id="tspan49804-2-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.8048px;font-family:Uroob;-inkscape-font-specification:'Uroob, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.265242"
-         x="56.894798"
+         x="21.807442"
          y="266.81967">OHIS</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 85.090001,269.875 V 260.35"
+       d="M 50.8,269.875 V 260.35"
        id="path67786-8-6" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 81.915001,257.175 H 56.515"
+       d="M 47.625,257.175 H 22.224999"
        id="path67788-7-3" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 53.34,260.35 v 13.335"
+       d="m 19.049999,260.35 v 13.335"
        id="path67790-6-0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 56.515,276.86 H 69.85"
+       d="m 22.224999,276.86 h 13.335"
        id="path67792-8-1" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-4-4"
        sodipodi:type="arc"
-       sodipodi:cx="-260.62076"
-       sodipodi:cy="81.049431"
+       sodipodi:cx="-260.50681"
+       sodipodi:cy="46.759621"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -365,13 +378,13 @@
        sodipodi:arc-type="arc"
        transform="rotate(-90.19039)"
        sodipodi:open="true"
-       d="m -257.44578,81.060155 a 3.175,3.175 0 0 1 -3.1851,3.16426" />
+       d="m -257.33182,46.770345 a 3.175,3.175 0 0 1 -3.1851,3.164259" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-9-8-8"
        sodipodi:type="arc"
-       sodipodi:cx="-55.649868"
-       sodipodi:cy="-260.53668"
+       sodipodi:cx="-21.360056"
+       sodipodi:cy="-260.42273"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -379,13 +392,13 @@
        sodipodi:arc-type="arc"
        transform="rotate(179.80961)"
        sodipodi:open="true"
-       d="m -52.474886,-260.52596 a 3.175,3.175 0 0 1 -3.185099,3.16426" />
+       d="m -18.185074,-260.41201 a 3.175,3.175 0 0 1 -3.185099,3.16426" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-9-0-9-6"
        sodipodi:type="arc"
-       sodipodi:cx="273.87128"
-       sodipodi:cy="-55.605427"
+       sodipodi:cx="273.75732"
+       sodipodi:cy="-21.315615"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -393,10 +406,10 @@
        sodipodi:arc-type="arc"
        transform="rotate(89.80961)"
        sodipodi:open="true"
-       d="m 277.04626,-55.594703 a 3.175,3.175 0 0 1 -3.1851,3.16426" />
+       d="m 276.93231,-21.30489 a 3.175,3.175 0 0 1 -3.1851,3.164259" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 69.85,275.59 H 66.04"
+       d="m 35.559999,275.59 h -3.81"
        id="path69412-7-7" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -556,26 +569,40 @@
        id="path69412-7-3" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 149.225,266.7 v -9.525"
-       id="path67786-8-6-2" />
+       d="M 159.385,276.225 V 266.7"
+       id="path67786-8-6-2"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 146.05,254 H 113.665"
-       id="path67788-7-3-8" />
+       d="M 156.21,263.525 H 123.825"
+       id="path67788-7-3-8"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 110.49,257.175 V 270.51"
-       id="path67790-6-0-3" />
+       d="m 120.65,266.7 v 13.97"
+       id="path67790-6-0-3"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.6256;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 113.665,273.685 H 130.81"
-       id="path67792-8-1-0" />
+       d="M 123.825,283.845 H 143.51"
+       id="path67792-8-1-0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-4-4-8"
        sodipodi:type="arc"
-       sodipodi:cx="-257.65891"
-       sodipodi:cy="145.19461"
+       sodipodi:cx="-267.21762"
+       sodipodi:cy="155.32291"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -583,13 +610,16 @@
        sodipodi:arc-type="arc"
        transform="rotate(-90.19039)"
        sodipodi:open="true"
-       d="m -254.48392,145.20533 a 3.175,3.175 0 0 1 -3.1851,3.16426" />
+       d="m -264.04264,155.33363 a 3.175,3.175 0 0 1 -3.1851,3.16426"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-9-8-8-6"
        sodipodi:type="arc"
-       sodipodi:cx="-112.8101"
-       sodipodi:cy="-257.55161"
+       sodipodi:cx="-122.93839"
+       sodipodi:cy="-267.11032"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -597,13 +627,16 @@
        sodipodi:arc-type="arc"
        transform="rotate(179.80961)"
        sodipodi:open="true"
-       d="m -109.63511,-257.54088 a 3.175,3.175 0 0 1 -3.1851,3.16426" />
+       d="m -119.76341,-267.0996 a 3.175,3.175 0 0 1 -3.1851,3.16426"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.619;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path67816-9-0-9-6-6"
        sodipodi:type="arc"
-       sodipodi:cx="270.8862"
-       sodipodi:cy="-112.76566"
+       sodipodi:cx="281.07993"
+       sodipodi:cy="-122.89185"
        sodipodi:rx="3.175"
        sodipodi:ry="3.175"
        sodipodi:start="0.0033777233"
@@ -611,26 +644,38 @@
        sodipodi:arc-type="arc"
        transform="rotate(89.80961)"
        sodipodi:open="true"
-       d="m 274.06118,-112.75494 a 3.175,3.175 0 0 1 -3.1851,3.16426" />
+       d="m 284.25491,-122.88113 a 3.175,3.175 0 0 1 -3.1851,3.16426"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.75585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 130.81,272.415 h -4.445"
-       id="path69412-7-7-3" />
+       style="fill:none;stroke:#000000;stroke-width:2.20107;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 143.51,282.575 h -6.985"
+       id="path69412-7-7-3"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.27;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 110.49,259.715 h -3.81 v 6.35 h 3.81"
-       id="path90143" />
+       d="m 120.65,269.24 h -3.81 v 6.35 h 3.81"
+       id="path90143"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.27;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 53.34,262.89 h -3.81 v 6.35 h 3.81"
+       d="m 19.049999,262.89 h -3.81 v 6.35 h 3.81"
        id="path90143-9" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.27;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 149.225,259.715 h 3.81 v 6.35 h -3.81"
-       id="path90143-1" />
+       d="m 159.385,269.24 h 3.81 v 6.35 h -3.81"
+       id="path90143-1"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.27;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 85.09,262.89 h 3.81 v 6.35 h -3.81"
+       d="m 50.799999,262.89 h 3.81 v 6.35 h -3.81"
        id="path90143-1-9" />
   </g>
 </svg>
