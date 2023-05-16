@@ -2,8 +2,6 @@
 
 ![OHIS Logo](Logo/OHIS%20Logo-Banner.png)
 
-<https://ohis.org/>
-
 * **Open:** Any individual or company may make devices compliant with this standard, with no obligation.
 * **Headset:** Describes the signaling commonly found between a user and a radio: Microphone, Headphones, and Push To Talk.
 * **Interconnect:** Describes both the physical and electrical connection of those signals between the user and radio.
@@ -28,9 +26,9 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
     - [1.2. Table Of Contents](#12-table-of-contents)
 - [2. Document History](#2-document-history)
 - [3. TL,DR: Summary Technical Definition of the Standard](#3-tldr-summary-technical-definition-of-the-standard)
-    - [Participants](#participants)
-    - [Physical Specification](#physical-specification)
-    - [Electrical Specification](#electrical-specification)
+    - [3.1. Participants](#31-participants)
+    - [3.2. Physical Specification](#32-physical-specification)
+    - [3.3. Electrical Specification](#33-electrical-specification)
 - [4. Why? What problems does this standard address?](#4-why-what-problems-does-this-standard-address)
     - [4.1. Device Portability](#41-device-portability)
         - [4.1.1. Existing Standards in Ham Radio](#411-existing-standards-in-ham-radio)
@@ -52,7 +50,7 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
                 - [5.2.1.3.1. DE-9](#52131-de-9)
         - [5.2.2. Cables](#522-cables)
             - [5.2.2.1. A Note on Shielded Cable](#5221-a-note-on-shielded-cable)
-        - [5.2.4. Sockets or Pigtails?](#524-sockets-or-pigtails)
+        - [5.2.3. Sockets or Pigtails?](#523-sockets-or-pigtails)
     - [5.3. Electrical](#53-electrical)
         - [5.3.1. Microphone](#531-microphone)
             - [5.3.1.1. Dynamic Microphones](#5311-dynamic-microphones)
@@ -82,7 +80,7 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
 
 A quick summary of the physical and electrical standard follows. If you have any questions, please see the [Standard Details](#5-standard-details) section below.  Similarly, if there are any disagreements between this summary and the details below, the [Standard Details](#5-standard-details) section is authoritative.
 
-## Participants
+## 3.1. Participants
 
 ![OHIS Overview](Images/OHIS%20Overview.png)
 
@@ -91,7 +89,7 @@ There are two participants:
 * **User**: Describes the "headset" side of the interconnect.  Consumes the Headphone signal, generates the Microphone signal, and will trigger Push To Talk (PTT).  Optionally uses the Vcc provided by the Radio device.  (It doesn't have to be an actual Headset.)
 * **Radio**: Describes the device that the User device connects to.  Generates the Headphone signal, consumes the Microphone and PTT signals, and provides power to Vcc. (It doesn't have to be an actual Radio.)
 
-## Physical Specification
+## 3.2. Physical Specification
 
 OHIS us an 8P8C Modular connector (commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) known as "RJ-45"), using TIA-568B wiring, shielded cable.  Any "Category" of shielded twisted pair works.
 
@@ -107,7 +105,7 @@ OHIS us an 8P8C Modular connector (commonly ([but incorrectly](https://en.wikipe
 | 8 | User <-- Radio | Headphone Right Audio |
 | Shield | Common | Tied to Power Ground |
 
-## Electrical Specification
+## 3.3. Electrical Specification
 
 **Microphone:** The Microphone signal is a typical electret microphone signal: -45dBV +/- 3dbV into 600 to 1k ohm.  The Radio device provides a DC bias voltage to power the microphone element, about 0.5mA across a 2vDC microphone element (eg: 5vDC through 6.8k ohm resistor).  Dynamic microphone elements require about 10 to 15db of amplification, and for the DC bias to be blocked; this Standard provides a simple 5 component microphone pre-amp, powered by the DC bias, to bring a Dynamic microphone element up to Electret signal levels.
 
@@ -269,7 +267,7 @@ In the worst case, if all you have is unshielded twisted pair, the standard pin 
 
 If you're making and selling a product, use shielded twisted pair.
 
-### 5.2.4. Sockets or Pigtails?
+### 5.2.3. Sockets or Pigtails?
 
 Both OHIS User and Radio May use RJ-45 sockets, which would use a "standard shielded Ethernet cable" to connect the two.
 
