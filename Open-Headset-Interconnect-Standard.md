@@ -1,9 +1,13 @@
 # 1. Open Headset Interconnect Standard
 
-* Open: Any individual or company may make devices compliant with this standard, with no obligation.
-* Headset: Describes the signaling commonly found between a user and a radio: Microphone, Headphones, and Push To Talk.
-* Interconnect: Describes both the physical and electrical connection of those signals between the user and radio.
-* Standard: Devices built to this standard will work with other devices built to the same standard.
+![OHIS Logo](Logo/OHIS%20Logo-Banner.png)
+
+<https://ohis.org/>
+
+* **Open:** Any individual or company may make devices compliant with this standard, with no obligation.
+* **Headset:** Describes the signaling commonly found between a user and a radio: Microphone, Headphones, and Push To Talk.
+* **Interconnect:** Describes both the physical and electrical connection of those signals between the user and radio.
+* **Standard:** Devices built to this standard will work with other devices built to the same standard.
 
 ## 1.1. Introduction, The Elevator Pitch
 
@@ -24,6 +28,9 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
     - [1.2. Table Of Contents](#12-table-of-contents)
 - [2. Document History](#2-document-history)
 - [3. TL,DR: Summary Technical Definition of the Standard](#3-tldr-summary-technical-definition-of-the-standard)
+    - [Participants](#participants)
+    - [Physical Specification](#physical-specification)
+    - [Electrical Specification](#electrical-specification)
 - [4. Why? What problems does this standard address?](#4-why-what-problems-does-this-standard-address)
     - [4.1. Device Portability](#41-device-portability)
         - [4.1.1. Existing Standards in Ham Radio](#411-existing-standards-in-ham-radio)
@@ -52,7 +59,7 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
             - [5.3.1.2. Carbon (Equivalent) Microphones](#5312-carbon-equivalent-microphones)
         - [5.3.2. Headphone](#532-headphone)
             - [5.3.2.1. Speaker Level](#5321-speaker-level)
-        - [5.3.3. Power](#533-power)
+        - [5.3.3. DC Power](#533-dc-power)
         - [5.3.4. PTT](#534-ptt)
     - [5.4. Artwork](#54-artwork)
 - [6. Contact and Contribution to the OHIS](#6-contact-and-contribution-to-the-ohis)
@@ -67,6 +74,7 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
 
 * 2022-08-26, v0.1, Work In Progress.
 * 2023-01-11, v0.2, Updated Introduction/Elevator Pitch.
+* 2023-05-16, v0.3, Preparation for 2023 Hamvention release.
 
 <div class="page" />
 
@@ -74,12 +82,16 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
 
 A quick summary of the physical and electrical standard follows. If you have any questions, please see the [Standard Details](#5-standard-details) section below.  Similarly, if there are any disagreements between this summary and the details below, the [Standard Details](#5-standard-details) section is authoritative.
 
-![OHIS Overview](Images/OHIS%20Overview-2390x699.png)
+## Participants
+
+![OHIS Overview](Images/OHIS%20Overview.png)
 
 There are two participants:
 
 * **User**: Describes the "headset" side of the interconnect.  Consumes the Headphone signal, generates the Microphone signal, and will trigger Push To Talk (PTT).  Optionally uses the Vcc provided by the Radio device.  (It doesn't have to be an actual Headset.)
 * **Radio**: Describes the device that the User device connects to.  Generates the Headphone signal, consumes the Microphone and PTT signals, and provides power to Vcc. (It doesn't have to be an actual Radio.)
+
+## Physical Specification
 
 OHIS us an 8P8C Modular connector (commonly ([but incorrectly](https://en.wikipedia.org/wiki/Modular_connector#8P8C)) known as "RJ-45"), using TIA-568B wiring, shielded cable.  Any "Category" of shielded twisted pair works.
 
@@ -95,17 +107,19 @@ OHIS us an 8P8C Modular connector (commonly ([but incorrectly](https://en.wikipe
 | 8 | User <-- Radio | Headphone Right Audio |
 | Shield | Common | Tied to Power Ground |
 
-**Microphone:** The Microphone signal is a typical Electret microphone signal: DC bias provided by the radio to power the microphone element, about 0.5mA across a 2vDC microphone element (eg: 5vDC through 6.8k ohm resistor).  Dynamic microphone elements will require about 10 to 15db of amplification, and for the DC bias to be blocked.  This Standard also provides a simple 5 component microphone pre-amp, powered by the DC bias, to bring a Dynamic microphone element up to Electret signal levels.
+## Electrical Specification
 
-**Headphones:** The Headphones signals are typical 16 to 64ohm headphones, about 1v RMS at full volume.  If the source (Radio) is mono, it must drive both Left and Right signals and can just tie them in parallel (assuming the driver can handle the lower impedance.)  If the destination (User) is mono, it can choose to either use only the Left audio, or to mix Left and Right together.
+**Microphone:** The Microphone signal is a typical electret microphone signal: -45dBV +/- 3dbV into 600 to 1k ohm.  The Radio device provides a DC bias voltage to power the microphone element, about 0.5mA across a 2vDC microphone element (eg: 5vDC through 6.8k ohm resistor).  Dynamic microphone elements require about 10 to 15db of amplification, and for the DC bias to be blocked; this Standard provides a simple 5 component microphone pre-amp, powered by the DC bias, to bring a Dynamic microphone element up to Electret signal levels.
 
-**Power:** The Radio must provide at least 200mA of 5vDC (where possible, but as low as 3.2vDC is acceptable if not), for the User device to run amplifiers, DTMF/tone generators, signal processing, etc.
+**Headphones:** The audio out from the radio to the user are typical headphones signals: about 0dBV to -10dBV at full volume, into 16 to 64ohm headphones.  If the source (Radio) is mono, it must drive both Left and Right signals and can just tie them in parallel (assuming the driver can handle the lower impedance.)  If the destination (User) is mono, it can choose to either use only the Left audio, or to mix Left and Right together.
+
+**DC Power (Optional):** The Radio should when possible provide DC power: regulated 5vDC at 200mA, for the User device to run amplifiers, DTMF/tone generators, signal processing, etc.  Radio devices that do not provide DC power must be labeled as such.  User devices that require DC power will not work with these Radio devices.
 
 **PTT:** The User triggers PTT using a simple contact closure to Power Ground (BJT Vce or FET Vds is acceptable).  The Radio side must not pull it up to any higher than Vcc.
 
 **GROUNDS!** Where possible, the User devices will keep the three Grounds separate: 1) Mic and Mic Ground, 2) Headphones Left/Right and Headphone Ground, and 3) Vcc/PTT and Power Ground.  This will allow for the best audio quality, least cross-talk, fewest ground loops, etc.
 
-But in some cases, this isn't possible.  eg: A 4-pin TRRS Headset connector which shares a common ground between the Mic and Headphones.  **THE RADIO DEVICE MUST SUPPORT THIS.**  The Radio MUST NOT require anything other than "Ground" on the Mic or Headphone Ground pins.  That is, no push-pull on the Headphones, no DC bias'd Mic Ground, etc.
+But in some cases, this isn't possible.  eg: CTIA headsets use a 4-pin TRRS Headset connector that shares a common ground between the Mic and Headphones.  **THE RADIO DEVICE MUST SUPPORT THIS.**  The Radio MUST NOT require anything other than "Ground" on the Mic or Headphone Ground pins.  That is, no push-pull on the Headphones, no DC bias'd Mic Ground, etc.
 
 <div class="page" />
 
@@ -113,7 +127,7 @@ But in some cases, this isn't possible.  eg: A 4-pin TRRS Headset connector whic
 
 ## 4.1. Device Portability
 
-The Open Headset Interconnect Standard allows a User to take their OHIS compliant Headset/Adapter to any OHIS compliant Radio/Adapter.
+The Open Headset Interconnect Standard allows a User to take their OHIS compliant User device (headset or adapter) to any OHIS compliant Radio (or adapter).
 
 ### 4.1.1. Existing Standards in Ham Radio
 
@@ -269,17 +283,17 @@ OHIS Radio devices Must be a socket, and May Not have integrated cables.
 
 The Microphone signal in OHIS is a conventional Electret Microphone element, as commonly used in mobiles, HTs, computers, and phones.  That is:
 
-* About 1kOhm load impedance.
-* About -45dBm signal strength.
-* The Radio side provides to the User side, a DC Bias voltage through a current limiting resistor.  DC bias voltage and current limiting resistor should target about 0.5mA bias current at 2vDC through the microphone element.
-    * For example, using a 5vDC source leaves a 3v drop across the current limiting resistor.  0.5mA at 3v is 6k ohm.  (A common 6.2k ohm resistor is close enough.)
+* Impedance: 600 ohm
+* Signal strength: -45dBV +/- 3dBV
+* DC Bias Voltage: 5vDC through 6.2k ohm resistor, provided by the Radio device.
+    * DC bias voltage and current limiting resistor should target about 0.5mA bias current at 2vDC through the microphone element. For example, using a 5vDC source leaves a 3v drop across the current limiting resistor.  0.5mA at 3v is 6k ohm.  (A common 6.2k ohm resistor is close enough.)  Other voltages and current limiting resistors are also possible.
     * This DC bias voltage should be as free from noise as possible.  Any noise on this supply will conduct directly to the microphone input on the radio.
 
 The Microphone Signals are carried on Pins 6 (Microphone) and 3 (Microphone Ground), which are the Green pair in TIA-568B wiring.
 
-Microphone Ground should be kept as separate as possible (not tied to Power or Headphone Grounds unless absolutely necessary), allowing Microphone signal return currents, and ONLY the Microphone signal return currents, to be seen by the Microphone receiver on the Radio side.  Ideally, the Microphone receiver circuit treats the Microphone pair as a balanced signal to reject common mode current noise picked up by the Microphone cables.
+Microphone Ground should be kept as separate as possible (not tied to Power or Headphone Grounds unless absolutely necessary), allowing Microphone signal return currents, and ONLY the Microphone signal return currents, to be seen by the Microphone receiver on the Radio side.  Ideally, the Microphone receiver circuit treats the Microphone pair as a balanced, or pseudo-balanced, signal to reject common mode current noise picked up by the Microphone cables.
 
-This may not always be possible (eg: a 4 pin "CTIA" headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie the two grounds together.  But this should only be done if absolutely necessary.
+This may not always be possible (eg: a 4 pin "CTIA" headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie grounds together.  But this should only be done if absolutely necessary.
 
 #### 5.3.1.1. Dynamic Microphones
 
@@ -287,22 +301,22 @@ Dynamic Microphone elements, as commonly used with HF radios and professional au
 
 A simple 5 component circuit to do this (amplification and bias removal) is available as part of this standard, free for all to use without obligation.  See [Appendix, section 7.1](#71-dynamic-microphone-to-ohis-preamp) for this circuit.
 
-Similarly, a Radio expecting a dynamic microphone signal will need about 10 to 15dB of attenuation, and cannot back-feed a DC bias into the radio.  A simple 3:1 or 4:1 voltage divider and series DC blocking capacitor can accomplish this.  See [Appendix, section 7.2](#72-ohis-to-dynamic-microphone-pad) for this circuit.
+Similarly, a Radio expecting a dynamic microphone signal will need about 10 to 15dB of attenuation, and cannot back-feed a DC bias into the radio.  A 3:1 or 4:1 voltage divider and series DC blocking capacitor can accomplish this.  See [Appendix, section 7.2](#72-ohis-to-dynamic-microphone-pad) for this circuit.
 
 #### 5.3.1.2. Carbon (Equivalent) Microphones
 
 Carbon, or Carbon Equivalent, microphones, as commonly used with aviation headsets and telephone handsets, will need about 20dB of attenuation to reach Electret level.
 
-This can be accomplished with a simple 10:1 voltage divider.  But the DC bias voltage needs to be passed through, or re-generated from Vcc power. **TODO** Document this here?  Appendix?
+This can be accomplished with a simple 10:1 voltage divider.  But the DC bias voltage needs to be passed through, or re-generated from Vcc power. **TODO**  Appendix?
 
-Similarly a Radio expecting a Carbon (Equivalent) signal will need about 20dB of amplification.  **TODO** Document this here?  Appendix?
+Similarly a Radio expecting a Carbon (Equivalent) signal will need about 20dB of amplification.  **TODO**  Appendix?
 
 ### 5.3.2. Headphone
 
-The Headphone signal in OHIS is a conventional headphone style signal, as used pretty much everywhere.  That is:
+The Headphone signal in OHIS is a conventional headphone style signal.  That is:
 
 * Commonly between 8 and 64 ohms load impedance.  Some less common headphones can be as high as 300 ohms.
-* About 10dBm to 20dBm (10mW to 100mW) of power at full volume.
+* 0dBV to -10dBV at full volume.
 * Ground referenced single ended audio per channel.  No DC offset, and no push-pull.
 * Stereo signals must share a common return path Ground.
 
@@ -310,17 +324,21 @@ The Headphone Signals are carried on Pins 4 (Left), 8 (Right), and 5 (Headphone 
 
 Similar to the Microphone Ground, the Headphone Ground should be kept as separate as possible, preventing the Headphone return currents from impacting the Microphone signal.
 
-This may not always be possible (eg: a 4 pin TRRS headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie the two grounds together.  But this should only be done if absolutely necessary.
+This may not always be possible (eg: a 4 pin "CTIA" headset with a shared Mic and Headphone Ground).  In these situations, it is acceptable to tie the two grounds together.  But this should only be done if absolutely necessary.
 
 #### 5.3.2.1. Speaker Level
 
-Speaker level audio signals are commonly between 4 and 16 ohms, and between 1W and 10W.  Speaker amplifiers also often drive both sides of a speaker signal (for increased power output), meaning that the signal is NOT ground referenced.
+Speaker level audio signals are commonly between 4 and 16 ohms, and between 1W and 10W.  Speaker amplifiers also often drive both sides of a speaker signal (for increased power output from a given supply voltage), meaning that the signal is NOT ground referenced.
 
 When taking a Speaker level signal as an input on the Radio side, it's best to pad it down by at least 20dB (10:1 ratio voltage divider), then isolate it using a 1:1 audio transformer.
 
 Generating a Speaker level signal on the User side is beyond the scope of this document.  The Headphone signal can be used as a Line Level signal to feed a conventional speaker amplifier.
 
-### 5.3.3. Power
+### 5.3.3. DC Power
+
+If possible, the Radio side should provide 5v regulated DC power, 200mA.  If sufficient power is not available, then the Radio side device must be marked as not providing power, so the user knows not to use User devices that require DC power.
+
+Note: This is NOT the same as DC Bias voltage on the microphone signal, that signal is REQUIRED by the standard.  The Vcc power is optional, not the DC Bias voltage on the microphone signal.
 
 Vcc Power is on Pin 1, paired with PTT on the Orange pair.  Power Ground is on Pin 7, paired with Headphone Right audio on the Brown pair (TIA-568B wiring.)
 
@@ -330,7 +348,7 @@ Over-voltage by 10% (5.5vDC) is acceptable.  If the power source feeding the Rad
 
 In situations when the Radio side doesn't have 5vDC power, under-voltage as low as 3.0vDC (lower end of a single Li-Ion cell's voltage) is acceptable; there's no need to boost it up to 5vDC.  But be aware that the lower voltage overhead may compromise performance of some OHIS User devices.
 
-OHIS User devices Must work with 5vDC and consume no more than 200mA.  OHIS User devices Should work with as little as 3.0vDC power if possible, and not assume Vcc is 5vDC.  For example, use a Vcc/2 voltage divider to generate BIAS voltages, rather than a fixed 2.5vDC voltage reference.
+OHIS User devices that require power Must work with 5vDC and consume no more than 200mA.  OHIS User devices Should work with as little as 3.0vDC power if possible, and not assume Vcc is 5vDC.  For example, use a Vcc/2 voltage divider to generate BIAS voltages, rather than a fixed 2.5vDC voltage reference.
 
 ### 5.3.4. PTT
 
@@ -340,21 +358,26 @@ The User side triggers Push To Talk (PTT) by shorting the PTT signal to Power Gr
 
 This means, if the Radio side adapter is controlling a Radio that is keyed by closing the Mic loop to DC, that closure must be done in the adapter (relay, MOSFET, etc) and NOT by passing the audio through the PTT signal to the OHIS User side.  Assume the PTT circuit is not suitable for passing audio.
 
-<div class="page" />
-
 ## 5.4. Artwork
 
 Since the RJ-45 is a very common connector, all OHIS sockets Should be labeled clearly as OHIS.
 
-**TODO** Include artwork here.  Refer to SVG and KiCAD files.
+![OHIS Logo](Logo/OHIS%20Logo.png)
+
+Source files:
+
+* <https://github.com/open-headset-interconnect-standard/ohis/tree/main/Logo>
+
+<div class="page" />
 
 # 6. Contact and Contribution to the OHIS
 
-The Open Headset Interconnect Standard is sponsored and hosted by Halibut Electronics, Inc.
+The most current links to participation and contacts are at the official webpage for Open Headset Interconnect Standard: <https://ohis.org/>
 
-The official source for the Open Headset Interconnect Standard is: [https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard](https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard)
+There are two ways to contact the OHIS working group:
 
-Provide feedback and suggestions through [GitHub Issues](https://github.com/Halibut-Electronics/Open-Headset-Interconnect-Standard/issues) on the Standard repository.
+* Subscribing to the [OHIS groups.io list](https://groups.io/g/ohis/).
+* Submitting a [GitHub Issue](https://github.com/open-headset-interconnect-standard/ohis/issues) on the Standard repository.
 
 ## 6.1. Contributors
 
