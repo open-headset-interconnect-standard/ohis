@@ -204,7 +204,7 @@ It's possible (hopeful!) that devices will some day be built to use OHIS directl
 
 To further clarify the use of "User" and "Radio:"
 
-* User Device: Commonly referred to as "the headset" in this document, but isn't necessarily an actual headset.  Any device that consumes the Headphone signal from the Radio, and generates a Microhphone signal sent to the Radio, and is capable of triggering the PTT, is considered a User device.  It could be a separate headphone, mic on a boom arm, and a foot switch.  Or it could be a "speaker-mic" as commonly found on HTs.  Or it could be one side of a "middle-ware" device described above.
+* User Device: Commonly referred to as "the headset" in this document, but isn't necessarily an actual headset.  Any device that consumes the Headphone signal from the Radio, and generates a Microphone signal sent to the Radio, and is capable of triggering the PTT, is considered a User device.  It could be a separate headphone, mic on a boom arm, and a foot switch.  Or it could be a "speaker-mic" as commonly found on HTs.  Or it could be one side of a "middle-ware" device described above.
 * Radio Device: Again, this is not necessarily a Radio.  Any device that consumes a Microphone signal and generates a Headphone signal, and (optionally) does something useful with the PTT signal, is considered a Radio device.  It could be a computer audio interface, or a BlueTooth connection to a phone, or the other side of a "middle-ware" device.
 
 ## 5.2. Physical
