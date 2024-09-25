@@ -74,8 +74,6 @@ This standard builds on the work done by Tom Tengdin [WB9VXY](https://www.qrz.co
 * 2023-01-11, v0.2, Updated Introduction/Elevator Pitch.
 * 2023-05-16, v0.3, Preparation for 2023 Hamvention release.
 
-<div class="page" />
-
 # 3. TL,DR: Summary Technical Definition of the Standard
 
 A quick summary of the physical and electrical standard follows. If you have any questions, please see the [Standard Details](#5-standard-details) section below.  Similarly, if there are any disagreements between this summary and the details below, the [Standard Details](#5-standard-details) section is authoritative.
