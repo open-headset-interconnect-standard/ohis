@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="OHIS Logo-Isolated.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="3.1338194"
+     inkscape:cx="374.78229"
+     inkscape:cy="803.33283"
+     inkscape:window-width="2506"
+     inkscape:window-height="1376"
+     inkscape:window-x="1974"
+     inkscape:window-y="1467"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="path90143-1"
+     gridtolerance="10000"
+     objecttolerance="20">
+    <inkscape:grid
+       type="xygrid"
+       id="grid67421"
+       units="in"
+       spacingx="0.635"
+       spacingy="0.635" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="DotL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path89885" />
+    </marker>
+    <rect
+       x="297.40489"
+       y="905.74027"
+       width="248.29139"
+       height="144.28417"
+       id="rect65841" />
+    <rect
+       x="221.1313"
+       y="472.72828"
+       width="541.1705"
+       height="132.76769"
+       id="rect21881" />
+    <rect
+       x="240.44683"
+       y="247.24714"
+       width="233.71009"
+       height="105.87002"
+       id="rect3069" />
+    <rect
+       x="221.1313"
+       y="472.72827"
+       width="541.17047"
+       height="132.76768"
+       id="rect21881-2" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#fefefe;fill-opacity:1;stroke:none;stroke-width:0.282428;stroke-linecap:round;stroke-linejoin:round"
+       id="rect941"
+       width="107.95"
+       height="25.4"
+       x="85.724998"
+       y="260.35001"
+       inkscape:export-filename="/home/mark/src/ohis/Logo/OHIS Logo-Banner.png"
+       inkscape:export-xdpi="282.35001"
+       inkscape:export-ydpi="282.35001" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text65839"
+       style="font-family:'Bitstream Vera Sans';font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Bitstream Vera Sans, Normal';white-space:pre;shape-inside:url(#rect65841)" />
+    <g
+       id="path90143" />
+    <g
+       id="path90143-1">
+      <g
+         id="g1052566"
+         transform="matrix(1.1840387,0,0,1.1840387,-14.374402,-36.078427)"
+         inkscape:export-filename="/home/mark/src/OHIS/ohis/Logo/OHIS Logo-2666x1228.png"
+         inkscape:export-xdpi="1200.73"
+         inkscape:export-ydpi="1200.73">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3334px;line-height:1.25;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.232143"
+           x="85.686668"
+           y="212.60533"
+           id="text45559-1-7"
+           inkscape:export-filename="/home/mark/src/OHIS/ohis/Logo/OHIS Logo-2250x1037.png"
+           inkscape:export-xdpi="1200.2301"
+           inkscape:export-ydpi="1200.2301"><tspan
+             sodipodi:role="line"
+             id="tspan45557-4-8"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3334px;font-family:'Open Sans Condensed';-inkscape-font-specification:'Open Sans Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.232143"
+             x="85.686668"
+             y="212.60533">OHIS</tspan></text>
+        <path
+           id="path1051968"
+           style="color:#000000;fill:#000000;stroke-width:2.6704;stroke-linejoin:round;-inkscape-stroke:none"
+           transform="scale(0.26458333)"
+           d="m 323.99805,740.92773 v 2.05274 l -0.002,-2.04102 c -8.2798,0.001 -15.05228,6.77882 -15.05273,15.0586 L 315.0625,756 c 1.1e-4,-4.9719 3.96417,-8.93667 8.93555,-8.93945 v 0.01 h 122.40039 v -6.14258 z m 122.40625,0.0117 -0.002,6.11914 c 4.97322,-10e-4 8.93878,3.96624 8.93946,8.93946 l 6.11914,0.002 c -10e-4,-8.27981 -6.77683,-15.06009 -15.05664,-15.06055 z m -137.46289,67.86133 c 10e-4,8.27916 6.77773,15.05902 15.05664,15.06055 v 0.01 h 74.40234 v -3.71289 -2.42968 -5.89063 h -26.39648 v 5.89063 h -48.00586 v 0.0137 c -4.97138,-7.1e-4 -8.93683,-3.96752 -8.9375,-8.93946 z m 146.38867,-52.79883 v 36.00196 h 3.07031 3.07031 11.33203 a 2.40024,2.40024 0 0 0 2.39844,-2.40821 v -23.99804 a 2.40024,2.40024 0 0 0 -2.39844,-2.39844 H 461.4707 v -7.19727 z m -146.40625,0 v 7.19727 h -11.32227 a 2.40024,2.40024 0 0 0 -2.40039,2.39844 v 23.99804 a 2.40024,2.40024 0 0 0 2.40039,2.40821 h 11.32227 v 16.79297 h 6.15039 v -52.79493 z" />
+      </g>
+    </g>
+  </g>
+</svg>
