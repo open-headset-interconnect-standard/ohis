@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="76.178352mm"
+   height="35.102802mm"
+   viewBox="0 0 76.178352 35.102802"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -24,8 +24,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="3.1338194"
-     inkscape:cx="374.78229"
-     inkscape:cy="803.33283"
+     inkscape:cx="126.84203"
+     inkscape:cy="88.869193"
      inkscape:window-width="2506"
      inkscape:window-height="1376"
      inkscape:window-x="1974"
@@ -33,46 +33,53 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="path90143-1"
      gridtolerance="10000"
-     objecttolerance="20">
+     objecttolerance="20"
+     units="in"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
        id="grid67421"
        units="in"
        spacingx="0.635"
-       spacingy="0.635" />
+       spacingy="0.635"
+       originx="-127.51278"
+       originy="-387.34999" />
   </sodipodi:namedview>
   <defs
      id="defs2">
     <marker
        style="overflow:visible"
        id="DotL"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="DotL"
        inkscape:isstock="true">
       <path
-         transform="scale(0.8) translate(7.4, 1)"
-         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
          id="path89885" />
     </marker>
     <rect
-       x="297.40489"
-       y="905.74027"
-       width="248.29139"
-       height="144.28417"
+       x="297.40488"
+       y="905.7403"
+       width="248.2914"
+       height="144.28416"
        id="rect65841" />
     <rect
        x="221.1313"
-       y="472.72828"
-       width="541.1705"
-       height="132.76769"
+       y="472.72827"
+       width="541.17047"
+       height="132.76768"
        id="rect21881" />
     <rect
-       x="240.44683"
-       y="247.24714"
-       width="233.71009"
+       x="240.44682"
+       y="247.24715"
+       width="233.71008"
        height="105.87002"
        id="rect3069" />
     <rect
@@ -85,7 +92,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-49.40748,-191.31289)">
     <rect
        style="fill:#fefefe;fill-opacity:1;stroke:none;stroke-width:0.282428;stroke-linecap:round;stroke-linejoin:round"
        id="rect941"
@@ -100,14 +108,14 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text65839"
-       style="font-family:'Bitstream Vera Sans';font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Bitstream Vera Sans, Normal';white-space:pre;shape-inside:url(#rect65841)" />
+       style="font-size:40px;line-height:1.25;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Normal';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect65841)" />
     <g
        id="path90143" />
     <g
        id="path90143-1">
       <g
          id="g1052566"
-         transform="matrix(1.1840387,0,0,1.1840387,-14.374402,-36.078427)"
+         transform="matrix(1.5995452,0,0,1.5995452,-75.525486,-122.25735)"
          inkscape:export-filename="/home/mark/src/OHIS/ohis/Logo/OHIS Logo-2666x1228.png"
          inkscape:export-xdpi="1200.73"
          inkscape:export-ydpi="1200.73">
