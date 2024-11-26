@@ -407,7 +407,7 @@ This simple design is included in the Standard for all to use with no obligation
 * Q1: S9013, or similar NPN BJT transistor.
     * Tests were performed (by Mark Smith in 2022-08) using an S9013 transistor, but nearly any small signal NPN BJT should work. For example, a 2N3904 (through hole) or MMBT3904 (surface mount) should work equally well.
 
-An example recording of audio through this microphone preamp design is [here](https://halibut-electronics.github.io/Open-Headset-Interconnect-Standard/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3).
+An example recording of audio through this microphone preamp design is [here](https://open-headset-interconnect-standard.github.io/ohis/2022-08-18%20First%20Test%20Of%205%20Component%20Preamp.mp3).
 
 This circuit is only a slight modification of a conventional common emitter transistor amplifier, similar to what's analyzed [here](http://www.guitarscience.net/calcs/ce.htm).  The difference being that we are using the 2.2k ohm resistor in the Radio side (upper right corner above) as the collector resistor.  This means the top-side base resistor (R1 above) connects to the output, not to Vcc.  
 
